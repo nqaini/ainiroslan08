@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Centralwell';
+    src: local('Centralwell Regular'), local('Centralwell-Regular'),
+        url('Centralwell.woff2') format('woff2'),
+        url('Centralwell.woff') format('woff'),
+        url('Centralwell.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

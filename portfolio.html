@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.cdnfonts.com/css/william-morittan" rel="stylesheet">
+	<link href="fonts/Centralwell/stylesheet.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.cdnfonts.com/css/centralwell-personal-use" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+	<script src="main.js"></script> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AINIRSLN</title>
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+html {
+	scroll-behavior: smooth;
+} 
+body{
+	background-size: auto;
+	background-color: #000;
+} 
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 6%;
+} 
+.logo{
+	width: 8%;
+	margin: 0px 340px 0px -40px;
+} 
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 6%;
+} 
+
+.nav-links {
+	flex: 1;
+	text-align: right;
+} 
+.nav-links ul li { 
+	list-style: none;
+	display: inline-block;
+	padding: 20px 12px;
+} 
+
+.nav-links ul li a{
+	font-family: 'Poppins', serif;
+	text-decoration: none;
+	color: #fffcf9;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 1.8px;
+} 
+
+.nav-links ul li a::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background-color: #fffcf9;
+	margin: 10px auto;
+	display: block; 
+	transition: .5s;
+	font-weight: 600;
+} 
+
+.nav-links ul li a:hover::after{
+	width: 100%;
+	font-weight: 600;
+}
+.logo{
+	font-family: 'Poppins', serif;
+	text-decoration: none;
+	color: #fffcf9;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 1.8px;
+	margin: 20px 5px;
+}
+footer{ 
+    color: #FFFCF9;
+    text-align: center;
+	text-decoration: none; 
+	font-family: 'Poppins';
+	font-weight: 300;
+	white-space: nowrap;
+	margin: 20px;
+}
+.timeline-section{
+	min-height: 100vh;
+	padding: 100px 15px;
+	background-image: url('vn7.jpg');
+	background-size: cover;
+} 
+.timeline-section h1{
+	color: #FFFCF9;
+    text-align: center;
+    padding: 12px 20px;
+	text-decoration: none; 
+	font-family: 'Centralwell';
+	font-weight: 400;
+	font-size: 140px;
+	white-space: nowrap;
+} 
+.tl-caption{ 
+	color: #FFFCF9;
+    text-align: center;
+    padding: 0px 20px 50px 20px; 
+	text-decoration: none; 
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 600;
+	font-size: 20px;
+	white-space: nowrap;
+} 
+.timeline-items{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+} 
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #000;
+	left: calc(50% - 1px);
+} 
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+} 
+.timeline-item:last-child{
+	margin-bottom: 0;
+} 
+.timeline-item:nth-child(odd){
+	padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+	padding-left: calc(50% + 30px);
+} 
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background: #000;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top: 10px;
+}
+.timeline-date{
+	font-family: "MonteCarlo", serif;
+	font-size: 40px;
+	color: #fff;
+	margin: 6px 0 20px;
+	font-weight: 800;
+	letter-spacing: 0.3rem;
+	
+} 
+.timeline-content{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 5px;
+} 
+.timeline-content h3{
+	font-family: "MonteCarlo", serif;
+	font-size: 30px;
+	color: #000;
+	margin: 0 0px;
+	text-transform: capitalize;
+	font-weight: 500;
+} 
+.timeline-content p{
+	color: #768289;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+	white-space: nowrap;
+} 
+.timeline-content .tl-image{
+	width: 76%;
+	padding: 20px 0;
+} 
+
+/* repsonsive */
+@media(max-width: 767px){
+	.timeline-item:nth-child(odd){
+		padding-reight: 0;
+		text-align: left;
+	} 
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	} 
+	.timeline-dot{
+		left: 0;
+	} 
+} 
+.portfolio-container{
+	background-image: url('.jpg');
+	background-color: #151e23;
+	background-size: cover;
+	margin-top: 10px;
+	margin-bottom: 120px;
+	padding: 100px
+} 
+.portfolio-container .pf-image{
+	width: 32%;
+	margin: 100px 0 80px 620px;
+	box-shadow: 10px 10px 20px;
+} 
+
+.text-flex h1{ 
+	float: left;
+	color: #FFFCF9;
+	font-family:  'Centralwell';
+	font-weight: 500;
+	font-size: 90px;
+	margin-top: -400px;
+	margin-left: 120px;
+} 
+.text-flex .border{
+	float: left;
+	width: 25%; 
+	align: center;
+	margin-top: -260px;
+	margin-left: 200px;
+} 
+.text-flex p{
+	float: left;
+	color: #FFFCF9;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.4;
+	margin-left: 140px;
+	margin-top: -210px;
+} 
+.skill h1{
+	font-family: "MonteCarlo", serif;
+	font-weight: 400;
+	font-size: 60px; 
+	text-align: center;
+	color: #FFFCF9;
+} 
+.skill h3{
+	color: #FFFCF9;
+	margin: 5px;
+} 
+.skill{
+	width: 500px;
+	margin: 60px auto;
+	padding: 20px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} 
+.skill-container{ 
+	background-color: #000;
+	list-style: none;
+	padding: 80px;
+	margin-top: -120px;
+} 
+.skill li{
+	color: #FFFCF9;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 20px 0;
+	padding: 10px;
+} 
+.bar{ 
+	background: #353b48;
+	display: block;
+	height: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+} 
+.bar:hover{
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} 
+.bar span{
+	height: 20px;
+	float: left;
+	background: linear-gradient(103deg, rgba(0,0,0,1) 0%, rgba(140,200,210,1) 75%);
+} 
+.html{ 
+	width: 85%;
+	animation: html 3s;
+} 
+.css{ 
+	width: 98%;
+	animation: css 3s;
+} 
+.php{ 
+	width: 80%;
+	animation: php 3s;
+} 
+.javascript{ 
+	width: 88%;
+	animation: javascript 3s;
+} 
+@keyframes html{ 
+	0%{
+		width: 0%;
+	} 
+	100%{ 
+		width: 85%;
+	} 
+} 
+@keyframes css{ 
+	0%{
+		width: 0%;
+	} 
+	100%{ 
+		width: 98%;
+	} 
+} 
+@keyframes php{ 
+	0%{
+		width: 0%;
+	} 
+	100%{ 
+		width: 80%;
+	} 
+} 
+@keyframes javascript{ 
+	0%{
+		width: 0%;
+	} 
+	100%{ 
+		width: 88%;
+	} 
+} 
+
+</style> 
+</head>
+<body>
+
+<header>
+    <nav> 
+	<a class="logo" href="index.html">AINIRSLN</a>
+		<div class="nav-links">
+			<ul> 
+				<li><a href="about.html">ABOUT</a></li> 
+				<li><a href="portfolio.html">PORTFOLIO</a></li> 
+				<li><a href="gallery.html">GALLERY</a></li> 
+				<li><a href="contact.html">CONTACT</a></li> 
+			</ul> 
+		<div>
+    </nav> 
+
+<div class="portfolio-container">
+	<img src="pj1.jpg" class="pf-image">
+	
+	<div class="text-flex">
+	<h1>My Portfolio</h1>
+	
+	<img src="deco.png" class="border">
+	
+	<p>One of my experiences as a student is that I was<br>
+	an intern of 2-months
+	at UiTM Shah Alam. <br>There, I make use of my knowledge and skills<br>
+	to adapt to the environment and <br>
+	doing tasks as I was assigned to.</p></div> 
+</div>
+
+<div class="skill-container">
+<div class="skill">
+	<h1>My Skills Set</h1>
+	
+	<li><h3>Programming (HMTL, CSS, JAVA)</h3>
+		<span class="bar"><span class="html"></span></span>
+	</li> 
+	<li><h3>Language (Malay & English)</h3>
+		<span class="bar"><span class="css"></span></span>
+	</li>
+	<li><h3>Microsoft (Words, PowerPoint, Excel)</h3>
+		<span class="bar"><span class="php"></span></span>
+	</li> 
+	<li><h3>Other skills (Canva, cataloging)</h3>
+		<span class="bar"><span class="javascript"></span></span>
+	</li>
+</div>
+</div> 
+
+<section class="timeline-section">
+    <h1>Years of Education</h1>
+	<p class="tl-caption">This is my years of education, which I started as early <br>
+	as I was 4 years old, until I finish my Diploma.<p>
+	<div class="timeline-items">
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">2008 - 2010</div>
+			<div class="timeline-content">
+				<h3>Tadika Mutiara Bistari, UiTM</h3>
+				<img src="tadika.png" class="tl-image">
+				<p> I spent my early education as early <br> as
+				4 years old until I was 6, here.</p>
+			</div>
+		</div>
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">2011 - 2016</div>
+			<div class="timeline-content">
+				<h3>Sekolah Kebangsaan Seksyen 24</h3>
+				<img src="sks24.jpg" class="tl-image">
+				<p>Next, I spent my elementary education for 6 
+				years <br> here, which is conveniently
+				close to my home.</p>
+			</div>
+		</div>
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">2017 - 2022</div>
+			<div class="timeline-content">
+				<h3>Sekolah Menengah Seksyen 24(2)</h3>
+				<img src="smk242.jpg" class="tl-image">
+				<p> Then, I went to SMK Seksyen 24(2) <br>
+			for nearly 6 years and graduated secondary school. </p>
+			</div>
+		</div>
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">2022-2025</div>
+			<div class="timeline-content">
+				<h3>Universiti Teknologi MARA</h3>
+				<img src="uitm.jpg" class="tl-image">
+				<p> Later, I enrolled at UiTM Machang campus 
+				in the <br> same year, and spent my diploma of 
+				Information <br> Management for 1 year 
+				and a half.</p>
+			</div>
+		</div>
+</section>
+<footer>
+	<p>All rights reserved 2024 &copy; AINIRSLN</p>
+</footer> 
+</body> 
+</html>
